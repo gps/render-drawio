@@ -1,0 +1,15 @@
+name: render-drawio
+description: 'Looks for drawio files in a repo, and renders PNGs of each of them in place.'
+inputs:
+  GH_TOKEN:
+    description: GitHub Token used to interact with GitHub API
+    required: true
+  IGNORE_FILE_PATTERNS:
+    description: Regular expressions for the files to be ignored. The inputs are specified within square brackets where each input regular expression is enclosed within double quotes, comma separated and with correct indentations.
+    required: false
+  COMMIT_MESSAGE:
+    description: Commit message to use when commiting fixes.
+    required: false
+runs:
+  using: node12
+  main: 'dist/index.js'
