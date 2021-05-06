@@ -64,8 +64,7 @@ function getBranchName() {
 }
 
 async function run() {
-  const token = "foo";
-  // const token = core.getInput("GH_TOKEN");
+  const token = core.getInput("GH_TOKEN");
   let ignorePaths = core.getInput("IGNORE_FILE_PATTERNS");
   let commitMessage = core.getInput("COMMIT_MESSAGE");
 
