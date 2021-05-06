@@ -1,7 +1,7 @@
-name: Build Package to use ncc
+name: Build Distribution
 on: [pull_request]
 jobs:
-  build-package:
+  build-distribution:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
