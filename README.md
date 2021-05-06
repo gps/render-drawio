@@ -1,6 +1,6 @@
 # render-drawio
 
-Looks for drawio files in a repo, and renders PNGs of each of them in place.
+GitHub Action that looks for drawio files in a repo, and renders PNGs of each of them in place.
 
 ## Inputs
 
